@@ -1,66 +1,165 @@
-
-import Image from "next/image";
+import Link from "next/link";
+import { Container } from "@/components/container";
+import { WorkCard } from "@/components/work-card";
+import { ArticleCard } from "@/components/article-card";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            I LOVE BEN,  he helped me to made this website.
+    <>
+      {/* Hero / Introduction */}
+      <section id="hero">
+        <Container>
+          <h1>
+            UX Researcher with a strong design foundation, focused on understanding people in context
+            and translating research insights into thoughtful, adoptable solutions—especially in
+            healthcare and wellbeing.
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p style={{ marginTop: "var(--spacing-block)", fontSize: "1.125rem", maxWidth: "60ch" }}>
+            I work across research and design to help teams build experiences that people can truly
+            use, trust, and sustain over time.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+        </Container>
+      </section>
+
+      {/* What I Do / How I Work */}
+      <section id="what-i-do">
+        <Container>
+          <h2>What I Do / How I Work</h2>
+          <p style={{ marginTop: "var(--spacing-block)" }}>
+            I began my training in industrial design, but working in healthcare and rehabilitation contexts
+            made one thing clear: solutions fail when we don&apos;t deeply understand people, systems, and
+            constraints.
+          </p>
+          <p style={{ marginTop: "var(--spacing-element)" }}>
+            My work today focuses on studying real-world use and translating research insights
+            into thoughtful, feasible solutions that support wellbeing over time.
+          </p>
+          {/* <a href="/about">Learn more about my background →</a> */}
+          <p style={{ marginTop: "var(--spacing-block)", color: "var(--foreground-muted)" }}>
+            In practice, my work typically involves:
+          </p>
+          <div style={{ marginTop: "var(--spacing-element)", display: "flex", flexDirection: "column", gap: "var(--spacing-block)" }}>
+            <div>
+              <h3>Research grounded in real contexts</h3>
+              <p style={{ marginTop: "var(--spacing-inline)" }}>
+                I study behavior, motivation, and experience in context using mixed methods, especially in
+                healthcare, rehabilitation, and life transitions.
+              </p>
+            </div>
+            <div>
+              <h3>From insight to feasible solutions</h3>
+              <p style={{ marginTop: "var(--spacing-inline)" }}>
+                I translate research insights into concepts and systems that are practical, usable, and
+                grounded in real-world constraints.
+              </p>
+            </div>
+            <div>
+              <h3>Alignment across disciplines</h3>
+              <p style={{ marginTop: "var(--spacing-inline)" }}>
+                I work closely with designers, engineers, and clinicians to align perspectives and move
+                complex work forward with clarity.
+              </p>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Selected Work */}
+      <section id="selected-work">
+        <Container>
+          <h2>Selected Work</h2>
+
+          <div style={{ marginTop: "var(--spacing-block)", display: "flex", flexDirection: "column", gap: "var(--spacing-block)" }}>
+            <article style={{ paddingTop: "var(--spacing-block)", borderTop: "1px solid var(--border)" }}>
+              <h3>Preventive Swallowing Training Interaction System (CTAR)</h3>
+              <p style={{ marginTop: "var(--spacing-inline)" }}>
+                Investigating how flow-informed interaction design influences engagement and continuous
+                intention to use in preventive swallowing training.
+              </p>
+              <p style={{ marginTop: "var(--spacing-inline)", color: "var(--foreground-muted)" }}>
+                Research design, moderated user testing, questionnaire-based evaluation (SEM analysis),
+                contextual observation, qualitative feedback synthesis, interdisciplinary collaboration
+                with mechanical engineers and speech therapists.
+              </p>
+              <div style={{ marginTop: "var(--spacing-element)" }}>
+                <Link href="/work/ctar">View case study →</Link>
+              </div>
+            </article>
+
+            <article style={{ paddingTop: "var(--spacing-block)", borderTop: "1px solid var(--border)" }}>
+              <h3>Disability Identity & Cultural Values Study</h3>
+              <p style={{ marginTop: "var(--spacing-inline)" }}>
+                Examining the relationship between cultural orientation and disability identity among
+                American adults with acquired mobility disabilities.
+              </p>
+              <p style={{ marginTop: "var(--spacing-inline)", color: "var(--foreground-muted)" }}>
+                Research design, survey development, use of validated and adapted Likert-scale instruments,
+                quantitative analysis, qualitative response analysis, insight synthesis.
+              </p>
+              <div style={{ marginTop: "var(--spacing-element)" }}>
+                <Link href="/work/disability-identity-study">View case study →</Link>
+              </div>
+            </article>
+
+            <article style={{ paddingTop: "var(--spacing-block)", borderTop: "1px solid var(--border)" }}>
+              <h3>Financial Behavior Support for Early-Career Professionals</h3>
+              <p style={{ marginTop: "var(--spacing-inline)" }}>
+                Designing a mobile experience to help early-career professionals build awareness, alignment,
+                and healthier financial behaviors.
+              </p>
+              <p style={{ marginTop: "var(--spacing-inline)", color: "var(--foreground-muted)" }}>
+                Secondary research, surveys and user interviews, affinity synthesis, problem scoping,
+                ideation, design critique and feedback, prototyping collaboration, user testing, and iteration.
+              </p>
+              <div style={{ marginTop: "var(--spacing-element)" }}>
+                <Link href="/work/financial-behavior-support">View case study →</Link>
+              </div>
+            </article>
+          </div>
+        </Container>
+      </section>
+
+      {/* Latest Thinking */}
+      <section id="latest-thinking">
+        <Container>
+          <h2>Latest thinking</h2>
+
+          <div style={{ marginTop: "var(--spacing-block)", display: "flex", flexDirection: "column", gap: "var(--spacing-block)" }}>
+            <ArticleCard
+              title="Designing for Cognitive Load"
+              slug="designing-for-cognitive-load"
+              date="December 10, 2024"
+              readingTime="5 min read"
+              excerpt="How reducing mental effort in complex interfaces improves task completion and user confidence."
+              variant="compact"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+
+            <ArticleCard
+              title="Research in Ambiguity"
+              slug="research-in-ambiguity"
+              date="November 22, 2024"
+              readingTime="7 min read"
+              excerpt="Navigating uncertainty in early-stage research and turning open questions into actionable insights."
+              variant="compact"
+            />
+          </div>
+
+          <div style={{ marginTop: "var(--spacing-block)" }}>
+            <Link href="/thinking">More writing →</Link>
+          </div>
+        </Container>
+      </section>
+
+      {/* Closing / CTA */}
+      <section id="closing">
+        <Container>
+          <p style={{ fontSize: "1.125rem" }}>Interested in working together?</p>
+          <div style={{ marginTop: "var(--spacing-block)", display: "flex", gap: "var(--spacing-block)", flexWrap: "wrap" }}>
+            <Link href="/work">View all work</Link>
+            <Link href="/about">More about me</Link>
+          </div>
+        </Container>
+      </section>
+    </>
   );
 }
