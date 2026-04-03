@@ -82,7 +82,23 @@ export default function Home() {
                 with mechanical engineers and speech therapists.
               </p>
               <div style={{ marginTop: "var(--spacing-element)" }}>
-                <Link href="/work/ctar">View case study →</Link>
+                <Link href="/work/project-4">View case study →</Link>
+              </div>
+            </article>
+
+            <article style={{ paddingTop: "var(--spacing-block)", borderTop: "1px solid var(--border)" }}>
+              <h3>Də&apos;skəs Usability Study</h3>
+              <p style={{ marginTop: "var(--spacing-inline)" }}>
+                End-to-end usability evaluation of a mental wellness social platform for young people
+                in Kenya, examining whether users understand, can interact with, and find value in
+                the platform&apos;s core features.
+              </p>
+              <p style={{ marginTop: "var(--spacing-inline)", color: "var(--foreground-muted)" }}>
+                Study design, moderated usability testing, mixed-methods analysis, thematic coding,
+                cross-cultural data interpretation, SUS administration, severity rating, client reporting.
+              </p>
+              <div style={{ marginTop: "var(--spacing-element)" }}>
+                <Link href="/work/deskes">View case study →</Link>
               </div>
             </article>
 

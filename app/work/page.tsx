@@ -21,6 +21,24 @@ export default function WorkPage() {
           <div style={{ marginTop: "var(--spacing-block)", display: "flex", flexDirection: "column", gap: "var(--spacing-block)" }}>
             <article style={{ paddingTop: "var(--spacing-block)", borderTop: "1px solid var(--border)" }}>
               <h3>
+                <Link href="/work/deskes">Də&apos;skəs Usability Study</Link>
+              </h3>
+              <p style={{ marginTop: "var(--spacing-inline)", color: "var(--foreground-muted)", fontSize: "0.875rem" }}>
+                UX Researcher | 3 months | 2026
+              </p>
+              <p style={{ marginTop: "var(--spacing-element)" }}>
+                End-to-end usability evaluation of a mental wellness social platform for young people
+                in Kenya, surfacing critical barriers to engagement, trust, and content discovery.
+              </p>
+              <ul style={{ marginTop: "var(--spacing-element)", display: "flex", gap: "var(--spacing-inline)", flexWrap: "wrap", listStyle: "none", padding: 0 }}>
+                <li style={{ fontSize: "0.875rem", color: "var(--foreground-muted)" }}>UX Research</li>
+                <li style={{ fontSize: "0.875rem", color: "var(--foreground-muted)" }}>Health Tech</li>
+                <li style={{ fontSize: "0.875rem", color: "var(--foreground-muted)" }}>Mixed Methods</li>
+              </ul>
+            </article>
+
+            <article style={{ paddingTop: "var(--spacing-block)", borderTop: "1px solid var(--border)" }}>
+              <h3>
                 <Link href="/work/project-1">Healthcare Portal Redesign</Link>
               </h3>
               <p style={{ marginTop: "var(--spacing-inline)", color: "var(--foreground-muted)", fontSize: "0.875rem" }}>
