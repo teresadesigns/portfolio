@@ -3,7 +3,7 @@ import { Container } from "@/components/container";
 
 export default function Home() {
   return (
-    <div style={{ "--spacing-section": "var(--spacing-section-lp)" } as React.CSSProperties}>
+    <div style={{ "--spacing-section": "170px" } as React.CSSProperties}>
       {/* Hero / Introduction */}
       <section id="hero">
         <Container size="wide">
@@ -12,8 +12,8 @@ export default function Home() {
               fontFamily: "var(--font-jomhuria)",
               fontSize: "clamp(80px, 14vw, 200px)",
               color: "#B9B9B9",
-              lineHeight: 1,
-              margin: 0,
+              lineHeight: 0.5,
+              marginTop: "90px",
             }}
           >
             [teresa yeh]
@@ -21,12 +21,12 @@ export default function Home() {
           <h1
             style={{
               fontFamily: "var(--font-inter)",
-              fontSize: "60px",
+              fontSize: "50px",
               fontWeight: 600,
               color: "#6E6E6E",
               lineHeight: "normal",
               letterSpacing: "-1.2px",
-              marginTop: "50px",
+              marginTop: "40px",
               maxWidth: "1096px",
             }}
           >
@@ -36,11 +36,11 @@ export default function Home() {
           <p
             style={{
               fontFamily: "var(--font-inter)",
-              fontSize: "20px",
-              color: "#525252",
-              lineHeight: "30px",
-              letterSpacing: "-0.4px",
-              marginTop: "var(--spacing-block)",
+              fontSize: "16px",
+              color: "#6E6E6E",
+              lineHeight: "28px",
+              letterSpacing: "-0.2px",
+              marginTop: "50px",
               maxWidth: "827px",
             }}
           >
@@ -48,7 +48,7 @@ export default function Home() {
             I focus on healthcare, behavior change, and long-term adoption,<br />
             with a background in industrial design and a master&apos;s thesis on swallowing training.
           </p>
-          <div style={{ marginTop: "var(--spacing-block)" }}>
+          <div style={{ marginTop: "55px" }}>
             <Link href="/work" style={{ borderBottom: "none", color: "#525252" }}>
               See my [ work ] ↗
             </Link>
