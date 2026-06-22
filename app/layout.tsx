@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Jomhuria, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
@@ -25,6 +26,12 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const clashGrotesk = localFont({
+  src: "./fonts/ClashGrotesk-Variable.woff2",
+  variable: "--font-clash",
+  weight: "200 700",
+});
+
 export const metadata: Metadata = {
   title: "Your Name | UX Researcher & Product Designer",
   description: "UX researcher and product designer focused on reducing cognitive load in high-stakes environments.",
@@ -38,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${jomhuria.variable} ${inter.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${jomhuria.variable} ${inter.variable} ${clashGrotesk.variable} antialiased`}
       >
         <Nav />
         <main>{children}</main>

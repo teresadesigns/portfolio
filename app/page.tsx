@@ -11,7 +11,7 @@ export default function Home() {
             style={{
               fontFamily: "var(--font-jomhuria)",
               fontSize: "clamp(80px, 14vw, 200px)",
-              color: "#B9B9B9",
+              color: "#a6a6a6",
               lineHeight: 0.5,
               marginTop: "90px",
             }}
@@ -23,7 +23,7 @@ export default function Home() {
               fontFamily: "var(--font-inter)",
               fontSize: "50px",
               fontWeight: 600,
-              color: "#6E6E6E",
+              color: "#525252",
               lineHeight: "normal",
               letterSpacing: "-1.2px",
               marginTop: "40px",
@@ -37,8 +37,8 @@ export default function Home() {
             style={{
               fontFamily: "var(--font-inter)",
               fontSize: "16px",
-              color: "#6E6E6E",
-              lineHeight: "28px",
+              color: "#525252",
+              lineHeight: "25px",
               letterSpacing: "-0.2px",
               marginTop: "50px",
               maxWidth: "827px",
@@ -49,7 +49,7 @@ export default function Home() {
             with a background in industrial design and a master&apos;s thesis on swallowing training.
           </p>
           <div style={{ marginTop: "55px" }}>
-            <Link href="/work" style={{ borderBottom: "none", color: "#525252" }}>
+            <Link href="/work" style={{ borderBottom: "none", color: "#525252",letterSpacing:"-0.2px" }}>
               See my [ work ] ↗
             </Link>
           </div>
@@ -107,7 +107,7 @@ export default function Home() {
               fontSize: "14px",
               letterSpacing: "1px",
               textAlign: "center",
-              color: "#6E6E6E",
+              color: "#a6a6a6",
               textTransform: "uppercase",
               marginBottom: "13px"
             }}
@@ -126,30 +126,32 @@ export default function Home() {
 
           {/* CTAR — featured full-width card */}
           <article style={{ marginTop: "var(--spacing-block)" }}>
-            <div
-              style={{
-                width: "100%",
-                height: "546px",
-                background: "#E8E8E8",
-                borderRadius: "4px",
-              }}
-            />
-            <div style={{ marginTop: "var(--spacing-element)" }}>
-              <h3 style={{ fontFamily: "var(--font-inter)", fontWeight: 500 }}>
-                Preventive Swallowing Training Interaction System (CTAR)
-              </h3>
-              <p style={{ marginTop: "var(--spacing-inline)", fontSize: "20px", color: "#525252" }}>
-                Investigating how flow-informed interaction design influences engagement and continuous
-                intention to use in preventive swallowing training.
-              </p>
-              <p style={{ marginTop: "var(--spacing-inline)", fontSize: "0.875rem", color: "var(--foreground-muted)" }}>
-                Research design · Moderated user testing · SEM analysis · Contextual observation ·
-                Interdisciplinary collaboration
-              </p>
-              <div style={{ marginTop: "var(--spacing-element)" }}>
-                <Link href="/work/ctar-training">View case study →</Link>
+            <Link href="/work/ctar-training" className="work-card" style={{ display: "block", borderBottom: "none", color: "inherit" }}>
+              <div
+                style={{
+                  width: "100%",
+                  height: "546px",
+                  background: "#E8E8E8",
+                  borderRadius: "4px",
+                  marginTop: "50px",
+                }}
+              />
+              <div style={{ marginTop: "15px", maxWidth: "650px" }}>
+                <p style={{ fontFamily: "var(--font-inter)", fontSize: "16px", color: "#525252", fontWeight: 600, letterSpacing:"-0.2px" }}>
+                  Preventive Swallowing Training Interaction System (CTAR)
+                </p>
+                <p style={{ marginTop: "0px", fontFamily: "var(--font-inter)", fontSize: "16px", color: "#525252",letterSpacing:"-0.2px",lineHeight: 1.5 }}>
+                  Investigating how flow-informed interaction design influences engagement and continuous
+                  intention to use in preventive swallowing training.
+                </p>
+                <div className="work-card-tags">
+                  <p style={{ marginTop: "10px", fontFamily: "var(--font-inter)", fontSize: "16px", color: "#a6a6a6",letterSpacing:"-0.2px", lineHeight: 1.5 }}>
+                    Research design · Moderated user testing · SEM analysis · Contextual observation ·
+                    Interdisciplinary collaboration
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
           </article>
 
           {/* Deskes + Coming Soon — 2-column grid */}
@@ -163,26 +165,25 @@ export default function Home() {
           >
             {/* Deskes */}
             <article>
-              <div
-                style={{
-                  width: "100%",
-                  height: "546px",
-                  background: "#E8E8E8",
-                  borderRadius: "4px",
-                }}
-              />
-              <div style={{ marginTop: "var(--spacing-element)" }}>
-                <h3 style={{ fontFamily: "var(--font-inter)", fontWeight: 500 }}>
-                  Də&apos;skəs Usability Study
-                </h3>
-                <p style={{ marginTop: "var(--spacing-inline)", fontSize: "0.9rem", color: "#525252" }}>
-                  End-to-end usability evaluation of a mental wellness social platform for young people
-                  in Kenya.
-                </p>
-                <div style={{ marginTop: "var(--spacing-element)" }}>
-                  <Link href="/work/deskes">View case study →</Link>
+              <Link href="/work/deskes" style={{ display: "block", borderBottom: "none", color: "inherit" }}>
+                <div
+                  style={{
+                    width: "100%",
+                    height: "546px",
+                    background: "#E8E8E8",
+                    borderRadius: "4px",
+                  }}
+                />
+                <div style={{ marginTop: "var(--spacing-element)", maxWidth: "827px" }}>
+                  <p style={{ fontFamily: "var(--font-inter)", fontSize: "16px", color: "#525252", fontWeight: 700 }}>
+                    Də&apos;skəs Usability Study
+                  </p>
+                  <p style={{ marginTop: "8px", fontFamily: "var(--font-inter)", fontSize: "16px", color: "#525252" }}>
+                    End-to-end usability evaluation of a mental wellness social platform for young people
+                    in Kenya.
+                  </p>
                 </div>
-              </div>
+              </Link>
             </article>
 
             {/* Coming soon placeholder */}
@@ -193,33 +194,13 @@ export default function Home() {
                   height: "546px",
                   background: "#E8E8E8",
                   borderRadius: "4px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
                 }}
-              >
-                <span
-                  style={{
-                    fontSize: "0.75rem",
-                    letterSpacing: "0.08em",
-                    textTransform: "uppercase",
-                    color: "#B9B9B9",
-                  }}
-                >
-                  Coming soon
-                </span>
-              </div>
-              <div style={{ marginTop: "var(--spacing-element)" }}>
-                <h3
-                  style={{
-                    fontFamily: "var(--font-inter)",
-                    fontWeight: 500,
-                    color: "var(--foreground-muted)",
-                  }}
-                >
+              />
+              <div style={{ marginTop: "var(--spacing-element)", maxWidth: "827px" }}>
+                <p style={{ fontFamily: "var(--font-inter)", fontSize: "16px", color: "var(--foreground-muted)", fontWeight: 700 }}>
                   Untitled Study
-                </h3>
-                <p style={{ marginTop: "var(--spacing-inline)", fontSize: "0.9rem", color: "#B9B9B9" }}>
+                </p>
+                <p style={{ marginTop: "8px", fontFamily: "var(--font-inter)", fontSize: "16px", color: "#B9B9B9" }}>
                   In progress — details coming soon.
                 </p>
               </div>

@@ -148,3 +148,24 @@ nav ul {
     font-size: 1.25rem;
   }
 }
+
+/* Selected Work card hover — tags line */
+.work-card-tags {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+}
+
+.work-card:hover .work-card-tags {
+  max-height: 120px;
+  opacity: 1;
+}
+
+/* Touch devices: always show tags since hover doesn't exist */
+@media (hover: none) {
+  .work-card-tags {
+    max-height: 120px;
+    opacity: 1;
+  }
+}
