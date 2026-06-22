@@ -104,22 +104,32 @@ export default function Home() {
         <Container size="wide">
           <p
             style={{
-              fontSize: "0.875rem",
-              letterSpacing: "0.1em",
+              fontSize: "14px",
+              letterSpacing: "1px",
               textAlign: "center",
-              color: "var(--foreground-muted)",
+              color: "#6E6E6E",
               textTransform: "uppercase",
+              marginBottom: "13px"
             }}
           >
             Selected Work
           </p>
+        </Container>
+        <div
+          style={{
+            marginLeft: "calc(-1 * var(--page-padding-x))",
+            marginRight: "calc(-1 * var(--page-padding-x))",
+            borderTop: "1px solid #B9B9B9",
+          }}
+        />
+        <Container size="wide">
 
           {/* CTAR — featured full-width card */}
           <article style={{ marginTop: "var(--spacing-block)" }}>
             <div
               style={{
                 width: "100%",
-                height: "320px",
+                height: "546px",
                 background: "#E8E8E8",
                 borderRadius: "4px",
               }}
@@ -147,7 +157,7 @@ export default function Home() {
             style={{
               marginTop: "var(--spacing-block)",
               display: "grid",
-              gridTemplateColumns: "1fr 1fr",
+              gridTemplateColumns: "721fr 423fr",
               gap: "var(--spacing-block)",
             }}
           >
@@ -156,7 +166,7 @@ export default function Home() {
               <div
                 style={{
                   width: "100%",
-                  height: "200px",
+                  height: "546px",
                   background: "#E8E8E8",
                   borderRadius: "4px",
                 }}
@@ -180,7 +190,7 @@ export default function Home() {
               <div
                 style={{
                   width: "100%",
-                  height: "200px",
+                  height: "546px",
                   background: "#E8E8E8",
                   borderRadius: "4px",
                   display: "flex",
