@@ -19,13 +19,13 @@ export function Footer() {
           <div style={{ display: "flex", flexDirection: "column", gap: "var(--spacing-inline)" }}>
             <p style={{ fontSize: "0.875rem", fontWeight: 600 }}>Get in touch</p>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:chyeh12@uw.edu"
               style={{ fontSize: "0.875rem" }}
             >
-              your.email@example.com
+              chyeh12@uw.edu
             </a>
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://linkedin.com/in/teresa-yeh"
               target="_blank"
               rel="noopener noreferrer"
               style={{ fontSize: "0.875rem" }}
@@ -34,7 +34,7 @@ export function Footer() {
             </a>
           </div>
           <p style={{ fontSize: "0.875rem", color: "var(--foreground-muted)" }}>
-            &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+            &copy; {new Date().getFullYear()} Teresa Yeh. All rights reserved.
           </p>
         </div>
       </Container>

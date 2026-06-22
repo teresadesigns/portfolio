@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  /* Colors - grayscale only */
-  --background: #ffffff;
+  /* Colors */
+  --background: #F9F9F7;
   --foreground: #171717;
   --foreground-muted: #525252;
   --border: #e5e5e5;
+  --accent: #81A3BD;
 
   /* Layout */
   --content-width: 65ch;
