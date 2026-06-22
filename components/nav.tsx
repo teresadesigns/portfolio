@@ -17,12 +17,15 @@ export function Nav() {
           <Link
             href="/"
             style={{
-              fontWeight: 600,
-              fontSize: "1.125rem",
-              borderBottom: "none"
+              fontFamily: "var(--font-jomhuria)",
+              fontSize: "60px",
+              fontWeight: 400,
+              lineHeight: "26px",
+              color: "#B9B9B9",
+              borderBottom: "none",
             }}
           >
-            Your Name
+            [t]
           </Link>
 
           <ul style={{
