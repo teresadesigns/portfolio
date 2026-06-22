@@ -157,10 +157,10 @@ export default function Home() {
           {/* Deskes + Coming Soon — 2-column grid */}
           <div
             style={{
-              marginTop: "var(--spacing-block)",
+              marginTop: "0px",
               display: "grid",
               gridTemplateColumns: "721fr 423fr",
-              gap: "var(--spacing-block)",
+              gap: "20px",
             }}
           >
             {/* Deskes */}
@@ -172,13 +172,14 @@ export default function Home() {
                     height: "546px",
                     background: "#E8E8E8",
                     borderRadius: "4px",
+                    marginTop: "50px",
                   }}
                 />
-                <div style={{ marginTop: "var(--spacing-element)", maxWidth: "827px" }}>
-                  <p style={{ fontFamily: "var(--font-inter)", fontSize: "16px", color: "#525252", fontWeight: 700 }}>
+                <div style={{ marginTop: "15px", maxWidth: "650px" }}>
+                  <p style={{ fontFamily: "var(--font-inter)", fontSize: "16px", color: "#525252", fontWeight: 600, letterSpacing: "-0.2px" }}>
                     Də&apos;skəs Usability Study
                   </p>
-                  <p style={{ marginTop: "8px", fontFamily: "var(--font-inter)", fontSize: "16px", color: "#525252" }}>
+                  <p style={{ marginTop: "0px", fontFamily: "var(--font-inter)", fontSize: "16px", color: "#525252", letterSpacing: "-0.2px", lineHeight: 1.5 }}>
                     End-to-end usability evaluation of a mental wellness social platform for young people
                     in Kenya.
                   </p>
@@ -194,13 +195,14 @@ export default function Home() {
                   height: "546px",
                   background: "#E8E8E8",
                   borderRadius: "4px",
+                  marginTop: "50px",
                 }}
               />
-              <div style={{ marginTop: "var(--spacing-element)", maxWidth: "827px" }}>
-                <p style={{ fontFamily: "var(--font-inter)", fontSize: "16px", color: "var(--foreground-muted)", fontWeight: 700 }}>
+              <div style={{ marginTop: "15px", maxWidth: "650px" }}>
+                <p style={{ fontFamily: "var(--font-inter)", fontSize: "16px", color: "#525252", fontWeight: 600, letterSpacing: "-0.2px" }}>
                   Untitled Study
                 </p>
-                <p style={{ marginTop: "8px", fontFamily: "var(--font-inter)", fontSize: "16px", color: "#B9B9B9" }}>
+                <p style={{ marginTop: "0px", fontFamily: "var(--font-inter)", fontSize: "16px", color: "#525252", letterSpacing: "-0.2px", lineHeight: 1.5 }}>
                   In progress — details coming soon.
                 </p>
               </div>
