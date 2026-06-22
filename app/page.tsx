@@ -3,7 +3,7 @@ import { Container } from "@/components/container";
 
 export default function Home() {
   return (
-    <>
+    <div style={{ "--spacing-section": "var(--spacing-section-lp)" } as React.CSSProperties}>
       {/* Hero / Introduction */}
       <section id="hero">
         <Container size="wide">
@@ -21,31 +21,32 @@ export default function Home() {
           <h1
             style={{
               fontFamily: "var(--font-inter)",
-              fontSize: "clamp(2rem, 5vw, 60px)",
-              fontWeight: 400,
+              fontSize: "60px",
+              fontWeight: 600,
               color: "#6E6E6E",
-              lineHeight: 1.1,
-              letterSpacing: "-0.01em",
-              marginTop: "var(--spacing-element)",
-              maxWidth: "18ch",
+              lineHeight: "normal",
+              letterSpacing: "-1.2px",
+              marginTop: "50px",
+              maxWidth: "1096px",
             }}
           >
-            studies what stands between people and the support they need.
+            studies what stands between<br />
+            people and the support they need.
           </h1>
           <p
             style={{
               fontFamily: "var(--font-inter)",
               fontSize: "20px",
               color: "#525252",
-              lineHeight: 1.6,
+              lineHeight: "30px",
+              letterSpacing: "-0.4px",
               marginTop: "var(--spacing-block)",
-              maxWidth: "48ch",
+              maxWidth: "827px",
             }}
           >
-            UX Researcher. Currently an MS HCDE student at UW. I focus on
-            healthcare, behavior change, and long-term adoption, with a
-            background in industrial design and a master&apos;s thesis on
-            swallowing training.
+            UX Researcher. Currently an MS HCDE student at UW.<br />
+            I focus on healthcare, behavior change, and long-term adoption,<br />
+            with a background in industrial design and a master&apos;s thesis on swallowing training.
           </p>
           <div style={{ marginTop: "var(--spacing-block)" }}>
             <Link href="/work" style={{ borderBottom: "none", color: "#525252" }}>
@@ -99,7 +100,7 @@ export default function Home() {
       */}
 
       {/* Selected Work */}
-      <section id="selected-work">
+      <section id="selected-work" style={{ marginTop: "var(--spacing-section-lp)" }}>
         <Container size="wide">
           <p
             style={{
@@ -494,6 +495,6 @@ export default function Home() {
           </div>
         </Container>
       </section>
-    </>
+    </div>
   );
 }
