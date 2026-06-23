@@ -246,94 +246,18 @@ export default function Home() {
           <div
             style={{
               marginTop: "var(--spacing-block)",
-              display: "flex",
-              flexDirection: "column",
-              gap: "var(--spacing-block)",
+              paddingTop: "var(--spacing-block)",
+              paddingBottom: "var(--spacing-block)",
+              borderTop: "1px solid #a6a6a6",
+              borderBottom: "1px solid #a6a6a6",
             }}
           >
-            {/* Article 1 */}
-            <article
-              style={{
-                paddingTop: "var(--spacing-block)",
-                borderTop: "1px solid var(--border)",
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "flex-start",
-                  gap: "var(--spacing-block)",
-                }}
-              >
-                <div>
-                  <h3 style={{ fontFamily: "var(--font-inter)", fontWeight: 500 }}>
-                    <Link href="/thinking/designing-for-cognitive-load">
-                      Designing for Cognitive Load
-                    </Link>
-                  </h3>
-                  <p style={{ marginTop: "var(--spacing-inline)", fontSize: "0.9rem", color: "#525252" }}>
-                    How reducing mental effort in complex interfaces improves task completion and user confidence.
-                  </p>
-                </div>
-                <div
-                  style={{
-                    flexShrink: 0,
-                    textAlign: "right",
-                    fontSize: "0.875rem",
-                    color: "var(--foreground-muted)",
-                  }}
-                >
-                  <p>5 min read</p>
-                  <p>December 10, 2024</p>
-                </div>
-              </div>
-            </article>
-
-            {/* Article 2 */}
-            <article
-              style={{
-                paddingTop: "var(--spacing-block)",
-                borderTop: "1px solid var(--border)",
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "flex-start",
-                  gap: "var(--spacing-block)",
-                }}
-              >
-                <div>
-                  <h3 style={{ fontFamily: "var(--font-inter)", fontWeight: 500 }}>
-                    <Link href="/thinking/research-in-ambiguity">
-                      Research in Ambiguity
-                    </Link>
-                  </h3>
-                  <p style={{ marginTop: "var(--spacing-inline)", fontSize: "0.9rem", color: "#525252" }}>
-                    Navigating uncertainty in early-stage research and turning open questions into actionable insights.
-                  </p>
-                </div>
-                <div
-                  style={{
-                    flexShrink: 0,
-                    textAlign: "right",
-                    fontSize: "0.875rem",
-                    color: "var(--foreground-muted)",
-                  }}
-                >
-                  <p>7 min read</p>
-                  <p>November 22, 2024</p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div style={{ marginTop: "var(--spacing-block)", textAlign: "center" }}>
-            <Link href="/thinking" style={{ color: "#525252", borderBottom: "none" }}>
-              More Thoughts from [ teresa ] ↗
-            </Link>
+            <p style={{ fontFamily: "var(--font-inter)", fontSize: "16px", color: "#a6a6a6", fontWeight: 600, letterSpacing: "-0.2px" }}>
+              coming soon.
+            </p>
+            <p style={{ marginTop: "4px", fontFamily: "var(--font-inter)", fontSize: "16px", color: "#a6a6a6", fontWeight: 400, letterSpacing: "-0.2px" }}>
+              my thoughts on trends, technology, design, and more.
+            </p>
           </div>
         </Container>
       </section>
@@ -352,7 +276,7 @@ export default function Home() {
             left: "-0.05em",
             fontFamily: "var(--font-jomhuria)",
             fontSize: "clamp(120px, 20vw, 280px)",
-            color: "#E0E0E0",
+            color: "#a6a6a6",
             lineHeight: 1,
             userSelect: "none",
             pointerEvents: "none",
