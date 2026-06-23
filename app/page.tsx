@@ -325,33 +325,11 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* Category tags */}
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              gap: "var(--spacing-block)",
-              marginTop: "var(--spacing-element)",
-              flexWrap: "wrap",
-            }}
-          >
-            {["Urban Sketches", "Street Photography", "Design Experiments", "Generative Art"].map(
-              (cat) => (
-                <span
-                  key={cat}
-                  style={{ fontSize: "0.875rem", color: "#B9B9B9", letterSpacing: "0.04em" }}
-                >
-                  {cat}
-                </span>
-              )
-            )}
-          </div>
-
           {/* Self portrait + more? */}
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "1fr 1fr",
+              gridTemplateColumns: "785fr 415fr",
               gap: "var(--spacing-block)",
               marginTop: "var(--spacing-block)",
               alignItems: "end",
@@ -359,7 +337,7 @@ export default function Home() {
           >
             <div
               style={{
-                height: "320px",
+                height: "917px",
                 background: "#E8E8E8",
                 borderRadius: "4px",
                 display: "flex",
@@ -392,30 +370,18 @@ export default function Home() {
       </section>
 
       {/* Closing / CTA */}
-      <section id="closing">
+      <section id="closing" style={{ marginTop: "250px" }}>
         <Container size="wide">
           <p
             style={{
               fontFamily: "var(--font-inter)",
-              fontSize: "1.125rem",
+              fontSize: "16px",
               color: "#525252",
               textAlign: "center",
             }}
           >
             Still curious about [ teresa ]? Let&apos;s connect!
           </p>
-          <div
-            style={{
-              marginTop: "var(--spacing-block)",
-              display: "flex",
-              gap: "var(--spacing-block)",
-              flexWrap: "wrap",
-              justifyContent: "center",
-            }}
-          >
-            <Link href="/work" style={{ color: "#525252", borderBottom: "none" }}>View all work</Link>
-            <Link href="/about" style={{ color: "#525252", borderBottom: "none" }}>More about me</Link>
-          </div>
         </Container>
       </section>
     </div>
