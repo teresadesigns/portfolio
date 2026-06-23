@@ -109,19 +109,12 @@ export default function Home() {
               textAlign: "center",
               color: "#525252",
               textTransform: "uppercase",
-              marginBottom: "13px"
+              marginBottom: "0px"
             }}
           >
             Selected Work
           </p>
         </Container>
-        <div
-          style={{
-            marginLeft: "calc(-1 * var(--page-padding-x))",
-            marginRight: "calc(-1 * var(--page-padding-x))",
-            borderTop: "1px solid #9b9b7b",
-          }}
-        />
         <Container size="wide">
 
           {/* CTAR — featured full-width card */}
@@ -160,7 +153,7 @@ export default function Home() {
               marginTop: "0px",
               display: "grid",
               gridTemplateColumns: "721fr 423fr",
-              gap: "20px",
+              gap: "50px",
             }}
           >
             {/* Deskes */}
@@ -209,18 +202,29 @@ export default function Home() {
             </article>
           </div>
 
-          <div
-            style={{
-              marginTop: "var(--spacing-block)",
-              textAlign: "right",
-            }}
-          >
-            <Link href="/work" style={{ color: "#525252", borderBottom: "none" }}>
-              See more [ work ] ↗
-            </Link>
-          </div>
+          <div style={{ marginTop: "90px" }} />
         </Container>
       </section>
+
+      <div
+        style={{
+          marginLeft: "calc(-1 * var(--page-padding-x))",
+          marginRight: "calc(-1 * var(--page-padding-x))",
+          borderTop: "1px solid #B9B9B9",
+        }}
+      />
+      <Container size="wide">
+        <div
+          style={{
+            marginTop: "30px",
+            textAlign: "center",
+          }}
+        >
+          <Link href="/work" style={{ color: "#525252", borderBottom: "none" }}>
+            See more [ work ] ↗
+          </Link>
+        </div>
+      </Container>
 
       {/* Thinking Out Loud */}
       <section id="thinking-out-loud">
@@ -228,11 +232,12 @@ export default function Home() {
           <p
             style={{
               fontSize: "14px",
-              letterSpacing: "1px",
+              letterSpacing: "2px",
               textAlign: "center",
-              color: "#a6a6a6",
+              color: "#525252",
               textTransform: "uppercase",
-              marginBottom: "13px",
+              marginTop: "170px",
+              marginBottom: "0px",
             }}
           >
             Thinking Out Loud
@@ -325,13 +330,6 @@ export default function Home() {
             </article>
           </div>
 
-          <div
-            style={{
-              marginLeft: "calc(-1 * var(--page-padding-x))",
-              marginRight: "calc(-1 * var(--page-padding-x))",
-              borderTop: "1px solid #B9B9B9",
-            }}
-          />
           <div style={{ marginTop: "var(--spacing-block)", textAlign: "center" }}>
             <Link href="/thinking" style={{ color: "#525252", borderBottom: "none" }}>
               More Thoughts from [ teresa ] ↗
