@@ -100,14 +100,14 @@ export default function Home() {
       */}
 
       {/* Selected Work */}
-      <section id="selected-work" style={{ marginTop: "var(--spacing-section-lp)" }}>
+      <section id="selected-work" style={{ marginTop: "100px" }}>
         <Container size="wide">
           <p
             style={{
               fontSize: "14px",
-              letterSpacing: "1px",
+              letterSpacing: "2px",
               textAlign: "center",
-              color: "#a6a6a6",
+              color: "#525252",
               textTransform: "uppercase",
               marginBottom: "13px"
             }}
@@ -119,7 +119,7 @@ export default function Home() {
           style={{
             marginLeft: "calc(-1 * var(--page-padding-x))",
             marginRight: "calc(-1 * var(--page-padding-x))",
-            borderTop: "1px solid #B9B9B9",
+            borderTop: "1px solid #9b9b7b",
           }}
         />
         <Container size="wide">
@@ -175,7 +175,7 @@ export default function Home() {
                     marginTop: "50px",
                   }}
                 />
-                <div style={{ marginTop: "15px", maxWidth: "650px" }}>
+                <div style={{ marginTop: "15px", maxWidth: "600px" }}>
                   <p style={{ fontFamily: "var(--font-inter)", fontSize: "16px", color: "#525252", fontWeight: 600, letterSpacing: "-0.2px" }}>
                     Də&apos;skəs Usability Study
                   </p>
@@ -227,11 +227,12 @@ export default function Home() {
         <Container size="wide">
           <p
             style={{
-              fontSize: "0.875rem",
-              letterSpacing: "0.1em",
+              fontSize: "14px",
+              letterSpacing: "1px",
               textAlign: "center",
-              color: "var(--foreground-muted)",
+              color: "#a6a6a6",
               textTransform: "uppercase",
+              marginBottom: "13px",
             }}
           >
             Thinking Out Loud
@@ -324,6 +325,13 @@ export default function Home() {
             </article>
           </div>
 
+          <div
+            style={{
+              marginLeft: "calc(-1 * var(--page-padding-x))",
+              marginRight: "calc(-1 * var(--page-padding-x))",
+              borderTop: "1px solid #B9B9B9",
+            }}
+          />
           <div style={{ marginTop: "var(--spacing-block)", textAlign: "center" }}>
             <Link href="/thinking" style={{ color: "#525252", borderBottom: "none" }}>
               More Thoughts from [ teresa ] ↗
