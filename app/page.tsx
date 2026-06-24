@@ -272,14 +272,20 @@ export default function Home() {
           aria-hidden="true"
           style={{
             position: "absolute",
-            top: "-0.2em",
-            left: "-0.05em",
+            top: "0",
+            left: "-60px",
+            width: "423.255px",
+            height: "340px",
             fontFamily: "var(--font-jomhuria)",
-            fontSize: "clamp(120px, 20vw, 280px)",
-            color: "#a6a6a6",
-            lineHeight: 1,
+            fontSize: "600px",
+            fontWeight: 400,
+            color: "#B9B9B9",
+            textAlign: "center",
+            lineHeight: "26px",
+            opacity: 0.2,
             userSelect: "none",
             pointerEvents: "none",
+            overflow: "hidden",
           }}
         >
           [t]
@@ -288,21 +294,27 @@ export default function Home() {
           aria-hidden="true"
           style={{
             position: "absolute",
-            top: "-0.2em",
-            right: "-0.05em",
+            top: "0",
+            right: "-60px",
+            width: "423.255px",
+            height: "340px",
             fontFamily: "var(--font-jomhuria)",
-            fontSize: "clamp(120px, 20vw, 280px)",
-            color: "#E0E0E0",
-            lineHeight: 1,
+            fontSize: "600px",
+            fontWeight: 400,
+            color: "#B9B9B9",
+            textAlign: "center",
+            lineHeight: "26px",
+            opacity: 0.2,
             userSelect: "none",
             pointerEvents: "none",
+            overflow: "hidden",
           }}
         >
           [t]
         </span>
 
         <Container size="wide">
-          {/* Pill link */}
+          {/* Decorative oval */}
           <div
             style={{
               display: "flex",
@@ -310,19 +322,33 @@ export default function Home() {
               paddingTop: "var(--spacing-block)",
             }}
           >
-            <Link
-              href="/playground"
+            <div
               style={{
-                border: "1px solid #B9B9B9",
-                borderRadius: "999px",
-                padding: "0.75rem 2.5rem",
-                fontSize: "1.25rem",
-                color: "#6E6E6E",
-                letterSpacing: "0.02em",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "660px",
+                height: "260px",
+                borderRadius: "50%",
+                border: "1px solid #6E6E6E",
               }}
             >
-              Playground
-            </Link>
+              <span
+                style={{
+                  width: "520px",
+                  height: "25px",
+                  color: "#9B9B9B",
+                  textAlign: "center",
+                  fontFamily: "var(--font-inter)",
+                  fontSize: "80px",
+                  fontWeight: 400,
+                  lineHeight: "30px",
+                  letterSpacing: "-1.6px",
+                }}
+              >
+                Playground
+              </span>
+            </div>
           </div>
 
           {/* Self portrait + more? */}
