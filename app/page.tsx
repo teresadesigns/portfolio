@@ -374,20 +374,34 @@ export default function Home() {
               <span style={{ fontSize: "0.875rem", color: "#B9B9B9" }}>my self portrait</span>
             </div>
             <div>
-              <p
-                style={{
-                  fontFamily: "var(--font-jomhuria)",
-                  fontSize: "clamp(60px, 10vw, 140px)",
-                  color: "#B9B9B9",
-                  lineHeight: 1,
-                  margin: 0,
-                }}
-              >
-                more?
-              </p>
-              <div style={{ marginTop: "var(--spacing-element)" }}>
+              <div style={{ display: "flex", alignItems: "flex-end", opacity: 0.2 }}>
+                {[
+                  { char: "m", rotate: "-8deg" },
+                  { char: "o", rotate: "5deg" },
+                  { char: "r", rotate: "-3deg" },
+                  { char: "e", rotate: "10deg" },
+                  { char: "?", rotate: "-6deg" },
+                ].map(({ char, rotate }) => (
+                  <span
+                    key={char}
+                    style={{
+                      fontFamily: "var(--font-jomhuria)",
+                      fontSize: "200px",
+                      fontWeight: 400,
+                      color: "#B9B9B9",
+                      textAlign: "center",
+                      lineHeight: "26px",
+                      display: "inline-block",
+                      transform: `rotate(${rotate})`,
+                    }}
+                  >
+                    {char}
+                  </span>
+                ))}
+              </div>
+              <div style={{ marginTop: "calc(var(--spacing-element) + 10px)" }}>
                 <Link href="/playground" style={{ color: "#525252", borderBottom: "none" }}>
-                  Here you go ↗
+                  here you go ;)↗
                 </Link>
               </div>
             </div>
