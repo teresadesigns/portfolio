@@ -248,8 +248,8 @@ export default function Home() {
               marginTop: "var(--spacing-block)",
               paddingTop: "var(--spacing-block)",
               paddingBottom: "var(--spacing-block)",
-              borderTop: "1px solid #a6a6a6",
-              borderBottom: "1px solid #a6a6a6",
+              borderTop: "1px solid #B9B9B9",
+              borderBottom: "1px solid #B9B9B9",
             }}
           >
             <p style={{ fontFamily: "var(--font-inter)", fontSize: "16px", color: "#a6a6a6", fontWeight: 600, letterSpacing: "-0.2px" }}>
