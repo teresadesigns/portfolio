@@ -265,7 +265,7 @@ export default function Home() {
       {/* Playground Teaser */}
       <section
         id="playground-teaser"
-        style={{ position: "relative", overflow: "hidden" }}
+        style={{ position: "relative", overflow: "hidden", marginTop: "300px" }}
       >
         {/* Decorative Jomhuria letterforms */}
         <span
@@ -357,8 +357,8 @@ export default function Home() {
               display: "grid",
               gridTemplateColumns: "785fr 415fr",
               gap: "var(--spacing-block)",
-              marginTop: "var(--spacing-block)",
-              alignItems: "end",
+              marginTop: "calc(var(--spacing-block) + 170px)",
+              alignItems: "center",
             }}
           >
             <div
@@ -373,8 +373,8 @@ export default function Home() {
             >
               <span style={{ fontSize: "0.875rem", color: "#B9B9B9" }}>my self portrait</span>
             </div>
-            <div>
-              <div style={{ display: "flex", alignItems: "flex-end", opacity: 0.2 }}>
+            <div style={{ textAlign: "right" }}>
+              <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "flex-end", opacity: 0.2, marginRight: "-20px" }}>
                 {[
                   { char: "m", rotate: "-8deg" },
                   { char: "o", rotate: "5deg" },
@@ -401,7 +401,7 @@ export default function Home() {
               </div>
               <div style={{ marginTop: "calc(var(--spacing-element) + 10px)" }}>
                 <Link href="/playground" style={{ color: "#525252", borderBottom: "none" }}>
-                  here you go ;)↗
+                  here you go ;P ↗
                 </Link>
               </div>
             </div>
