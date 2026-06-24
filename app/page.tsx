@@ -49,7 +49,7 @@ export default function Home() {
             with a background in industrial design and a master&apos;s thesis on swallowing training.
           </p>
           <div style={{ marginTop: "55px" }}>
-            <Link href="/work" style={{ borderBottom: "none", color: "#525252",letterSpacing:"-0.2px", fontSize: "14px" }}>
+            <Link href="/work" style={{ borderBottom: "none", color: "#525252", letterSpacing:"-0.2px", fontSize: "14px", textDecoration: "underline", textDecorationColor: "#525252", textUnderlineOffset: "5px" }}>
               See my [ work ] ↗
             </Link>
           </div>
@@ -220,7 +220,7 @@ export default function Home() {
             textAlign: "center",
           }}
         >
-          <Link href="/work" style={{ color: "#525252", borderBottom: "none", fontSize: "14px" }}>
+          <Link href="/work" style={{ color: "#525252", borderBottom: "none", fontSize: "14px", textDecoration: "underline", textDecorationColor: "#525252", textUnderlineOffset: "5px" }}>
             See more [ work ] ↗
           </Link>
         </div>
@@ -400,7 +400,7 @@ export default function Home() {
                 ))}
               </div>
               <div style={{ marginTop: "calc(var(--spacing-element) + 10px)" }}>
-                <Link href="/playground" style={{ color: "#525252", borderBottom: "none", fontSize: "14px" }}>
+                <Link href="/playground" style={{ color: "#525252", borderBottom: "none", fontSize: "14px", textDecoration: "underline", textDecorationColor: "#525252", textUnderlineOffset: "5px" }}>
                   here you go ;P ↗
                 </Link>
               </div>
