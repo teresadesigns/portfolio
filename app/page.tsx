@@ -11,7 +11,7 @@ export default function Home() {
             style={{
               fontFamily: "var(--font-jomhuria)",
               fontSize: "clamp(80px, 14vw, 200px)",
-              color: "#a6a6a6",
+              color: "#B9B9B9",
               lineHeight: 0.5,
               marginTop: "90px",
             }}
@@ -49,7 +49,7 @@ export default function Home() {
             with a background in industrial design and a master&apos;s thesis on swallowing training.
           </p>
           <div style={{ marginTop: "55px" }}>
-            <Link href="/work" style={{ borderBottom: "none", color: "#525252",letterSpacing:"-0.2px" }}>
+            <Link href="/work" style={{ borderBottom: "none", color: "#525252",letterSpacing:"-0.2px", fontSize: "14px" }}>
               See my [ work ] ↗
             </Link>
           </div>
@@ -100,7 +100,7 @@ export default function Home() {
       */}
 
       {/* Selected Work */}
-      <section id="selected-work" style={{ marginTop: "100px" }}>
+      <section id="selected-work" style={{ marginTop: "200px" }}>
         <Container size="wide">
           <p
             style={{
@@ -220,7 +220,7 @@ export default function Home() {
             textAlign: "center",
           }}
         >
-          <Link href="/work" style={{ color: "#525252", borderBottom: "none" }}>
+          <Link href="/work" style={{ color: "#525252", borderBottom: "none", fontSize: "14px" }}>
             See more [ work ] ↗
           </Link>
         </div>
@@ -236,7 +236,7 @@ export default function Home() {
               textAlign: "center",
               color: "#525252",
               textTransform: "uppercase",
-              marginTop: "170px",
+              marginTop: "300px",
               marginBottom: "0px",
             }}
           >
@@ -400,7 +400,7 @@ export default function Home() {
                 ))}
               </div>
               <div style={{ marginTop: "calc(var(--spacing-element) + 10px)" }}>
-                <Link href="/playground" style={{ color: "#525252", borderBottom: "none" }}>
+                <Link href="/playground" style={{ color: "#525252", borderBottom: "none", fontSize: "14px" }}>
                   here you go ;P ↗
                 </Link>
               </div>
@@ -415,8 +415,9 @@ export default function Home() {
           <p
             style={{
               fontFamily: "var(--font-inter)",
-              fontSize: "16px",
+              fontSize: "14px",
               color: "#525252",
+              letterSpacing: "-0.2px",
               textAlign: "center",
             }}
           >
