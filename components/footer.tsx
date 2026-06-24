@@ -30,11 +30,11 @@ export function Footer() {
             >
               [t]
             </Link>
-            <div style={{ display: "flex", flexDirection: "column", gap: "4px", marginTop: "var(--spacing-inline)" }}>
-              <p style={{ fontSize: "0.875rem", color: "#525252" }}>Let&apos;s connect!</p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "4px", marginTop: "0px" }}>
+              <p style={{ fontSize: "0.875rem", color: "#525252", fontWeight: 600 }}>Let&apos;s connect!</p>
               <a
                 href="mailto:chyeh12@uw.edu"
-                style={{ fontSize: "0.875rem", color: "#525252", borderBottom: "none" }}
+                style={{ fontSize: "0.875rem", color: "#525252", borderBottom: "none", textDecoration: "underline", textDecorationColor: "#525252", textUnderlineOffset: "3px" }}
               >
                 chyeh12@uw.edu
               </a>
@@ -42,7 +42,7 @@ export function Footer() {
                 href="https://linkedin.com/in/teresa-yeh"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ fontSize: "0.875rem", color: "#525252", borderBottom: "none" }}
+                style={{ fontSize: "0.875rem", color: "#525252", borderBottom: "none", textDecoration: "underline", textDecorationColor: "#525252", textUnderlineOffset: "3px" }}
               >
                 LinkedIn
               </a>
@@ -50,12 +50,12 @@ export function Footer() {
           </div>
 
           {/* Right: nav links */}
-          <nav style={{ display: "flex", flexDirection: "column", gap: "4px", alignItems: "flex-end" }}>
-            <Link href="/"          style={{ fontSize: "0.875rem", color: "#525252", borderBottom: "none" }}>Home</Link>
-            <Link href="/work"      style={{ fontSize: "0.875rem", color: "#525252", borderBottom: "none" }}>Work</Link>
-            <Link href="/thinking"  style={{ fontSize: "0.875rem", color: "#525252", borderBottom: "none" }}>Thoughts</Link>
-            <Link href="/about"     style={{ fontSize: "0.875rem", color: "#525252", borderBottom: "none" }}>About</Link>
-            <Link href="/playground" style={{ fontSize: "0.875rem", color: "#525252", borderBottom: "none" }}>Playground</Link>
+          <nav style={{ display: "flex", flexDirection: "column", gap: "4px", alignItems: "flex-start" }}>
+            <Link href="/"          style={{ fontSize: "0.875rem", color: "#525252", borderBottom: "none", textDecoration: "underline", textDecorationColor: "#525252", textUnderlineOffset: "3px" }}>Home</Link>
+            <Link href="/work"      style={{ fontSize: "0.875rem", color: "#525252", borderBottom: "none", textDecoration: "underline", textDecorationColor: "#525252", textUnderlineOffset: "3px" }}>Work</Link>
+            <Link href="/thinking"  style={{ fontSize: "0.875rem", color: "#525252", borderBottom: "none", textDecoration: "underline", textDecorationColor: "#525252", textUnderlineOffset: "3px" }}>Thoughts</Link>
+            <Link href="/about"     style={{ fontSize: "0.875rem", color: "#525252", borderBottom: "none", textDecoration: "underline", textDecorationColor: "#525252", textUnderlineOffset: "3px" }}>About</Link>
+            <Link href="/playground" style={{ fontSize: "0.875rem", color: "#525252", borderBottom: "none", textDecoration: "underline", textDecorationColor: "#525252", textUnderlineOffset: "3px" }}>Playground</Link>
           </nav>
         </div>
       </Container>
