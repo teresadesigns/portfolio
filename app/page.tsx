@@ -267,52 +267,6 @@ export default function Home() {
         id="playground-teaser"
         style={{ position: "relative", overflow: "hidden", marginTop: "300px" }}
       >
-        {/* Decorative Jomhuria letterforms */}
-        <span
-          aria-hidden="true"
-          style={{
-            position: "absolute",
-            top: "0",
-            left: "-60px",
-            width: "423.255px",
-            height: "340px",
-            fontFamily: "var(--font-jomhuria)",
-            fontSize: "600px",
-            fontWeight: 400,
-            color: "#B9B9B9",
-            textAlign: "center",
-            lineHeight: "26px",
-            opacity: 0.2,
-            userSelect: "none",
-            pointerEvents: "none",
-            overflow: "hidden",
-          }}
-        >
-          [t]
-        </span>
-        <span
-          aria-hidden="true"
-          style={{
-            position: "absolute",
-            top: "0",
-            right: "-60px",
-            width: "423.255px",
-            height: "340px",
-            fontFamily: "var(--font-jomhuria)",
-            fontSize: "600px",
-            fontWeight: 400,
-            color: "#B9B9B9",
-            textAlign: "center",
-            lineHeight: "26px",
-            opacity: 0.2,
-            userSelect: "none",
-            pointerEvents: "none",
-            overflow: "hidden",
-          }}
-        >
-          [t]
-        </span>
-
         <Container size="wide">
           {/* Decorative oval */}
           <div
@@ -320,6 +274,8 @@ export default function Home() {
               display: "flex",
               justifyContent: "center",
               paddingTop: "var(--spacing-block)",
+              position: "relative",
+              zIndex: 1,
             }}
           >
             <div
@@ -361,17 +317,42 @@ export default function Home() {
               alignItems: "center",
             }}
           >
-            <div
-              style={{
-                height: "917px",
-                background: "#E8E8E8",
-                borderRadius: "4px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <span style={{ fontSize: "0.875rem", color: "#B9B9B9" }}>my self portrait</span>
+            <div style={{ position: "relative" }}>
+              {/* Decorative Jomhuria letterform */}
+              <span
+                aria-hidden="true"
+                style={{
+                  position: "absolute",
+                  top: "calc(-1 * (var(--spacing-block) + 170px))",
+                  left: 0,
+                  fontFamily: "var(--font-jomhuria)",
+                  fontSize: "600px",
+                  fontWeight: 400,
+                  color: "#B9B9B9",
+                  textAlign: "center",
+                  lineHeight: "26px",
+                  opacity: 0.2,
+                  userSelect: "none",
+                  pointerEvents: "none",
+                  zIndex: 0,
+                }}
+              >
+                [ ]t
+              </span>
+              <div
+                style={{
+                  height: "917px",
+                  background: "#E8E8E8",
+                  borderRadius: "4px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              >
+                <span style={{ fontSize: "0.875rem", color: "#B9B9B9" }}>my self portrait</span>
+              </div>
             </div>
             <div style={{ textAlign: "right" }}>
               <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "flex-end", opacity: 0.2, marginRight: "-20px" }}>
