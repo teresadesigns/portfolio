@@ -1,468 +1,586 @@
-import Link from "next/link";
 import { Container } from "@/components/container";
-import { CaseStudyHeader } from "@/components/case-study-header";
+import Link from "next/link";
 
-export default function CTARTrainingCaseStudy() {
+export default function CTARCaseStudy() {
   return (
     <article>
-      {/* Header */}
+
+      {/* ── HEADER ── */}
       <section>
         <Container>
-          <CaseStudyHeader
-            title="Preventive Swallowing Training"
-            role="UX Researcher & Interaction Designer | Master's Thesis"
-            timeline="Feb 2024 – Jun 2024"
-            tags={["UX Research", "Health Innovation", "Interaction Design", "Flow Theory", "SEM"]}
-          />
+          <p style={{
+            fontSize: "0.875rem",
+            color: "var(--foreground-muted)",
+            marginBottom: "var(--spacing-inline)"
+          }}>
+            Master's Thesis Case Study
+          </p>
+          <h1 style={{ maxWidth: "18ch" }}>
+            The Adoption Gap: Why Older Adults Don't Keep Training?
+          </h1>
         </Container>
       </section>
 
-      {/* Overview */}
+      {/* ── HERO IMAGE ── */}
+      <section>
+        <Container wide>
+          <div style={{
+            width: "100%",
+            aspectRatio: "16 / 7",
+            background: "var(--border)",
+            borderRadius: "4px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            color: "var(--foreground-muted)",
+            fontSize: "0.875rem"
+          }}>
+            [Hero image: system in use]
+          </div>
+        </Container>
+      </section>
+
+      {/* ── METADATA BAND ── */}
+      <section>
+        <Container>
+          <div style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+            gap: "var(--spacing-block)",
+            paddingTop: "var(--spacing-block)",
+            paddingBottom: "var(--spacing-block)",
+            borderTop: "1px solid var(--border)",
+            borderBottom: "1px solid var(--border)",
+          }}>
+            <div>
+              <p style={{ fontSize: "0.75rem", color: "var(--foreground-muted)", marginBottom: "0.25rem" }}>ROLE</p>
+              <p>Lead UX Researcher</p>
+            </div>
+            <div>
+              <p style={{ fontSize: "0.75rem", color: "var(--foreground-muted)", marginBottom: "0.25rem" }}>DURATION</p>
+              <p>Sep 2022 – Jun 2024</p>
+            </div>
+            <div>
+              <p style={{ fontSize: "0.75rem", color: "var(--foreground-muted)", marginBottom: "0.25rem" }}>SECTOR</p>
+              <p>Preventive Health · Aging · Behavior Change</p>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ── OVERVIEW ── */}
       <section>
         <Container>
           <h2>Overview</h2>
-
-          <div style={{ marginTop: "var(--spacing-block)", display: "flex", flexDirection: "column", gap: "var(--spacing-block)" }}>
+          <div style={{
+            marginTop: "var(--spacing-block)",
+            display: "flex",
+            flexDirection: "column",
+            gap: "var(--spacing-element)"
+          }}>
             <div>
-              <h3>Primary contribution</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>
-                This project demonstrates how flow-informed interaction design can shape users&apos; motivation
-                and attitudes toward preventive swallowing training — offering insight into why adoption
-                and sustained use remain challenging even when training methods are clinically supported.
-              </p>
-            </div>
-
-            <div>
-              <h3>In brief</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>
-                Sustained engagement with preventive swallowing training is closely tied to intrinsic
-                motivation and interaction experience — clear feedback, understandable goals, and
-                challenge–skill balance. This project explores how those factors, informed by flow theory,
-                shape older adults&apos; willingness to continue using a low-cost, gamified CTAR system.
-              </p>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* Background */}
-      <section>
-        <Container>
-          <h2>Background</h2>
-
-          <div style={{ marginTop: "var(--spacing-block)", display: "flex", flexDirection: "column", gap: "var(--spacing-block)" }}>
-            <div>
-              <h3>Why this study exists</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>
-                Preventive swallowing training is clinically recommended but difficult to sustain in everyday
-                life. While CTAR (chin tuck against resistance) is effective and accessible, existing tools
-                often lack engagement, feedback, and clarity — factors that influence whether people continue
-                using them over time. This project applies flow theory to examine how interaction design can
-                support sustained motivation in preventive training contexts.
-              </p>
-            </div>
-
-            <div>
-              <h3>Why the problem matters</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>The case follows a clear logic chain:</p>
-              <ol style={{ marginTop: "var(--spacing-inline)" }}>
-                <li style={{ marginTop: "var(--spacing-inline)" }}>
-                  <strong>Swallowing difficulty is serious.</strong> It affects up to one-third of older
-                  adults and is linked to increased risks of malnutrition and aspiration pneumonia. Because
-                  decline often develops gradually, preventive interventions are emphasized to maintain
-                  airway protection before clinical symptoms emerge.
-                </li>
-                <li style={{ marginTop: "var(--spacing-inline)" }}>
-                  <strong>CTAR is a valid preventive method.</strong> Chin Tuck Against Resistance targets
-                  the suprahyoid muscles critical for safe swallowing. It is clinically validated, accessible,
-                  and comparably effective to more demanding methods — making it well-suited for preventive use.
-                </li>
-                <li style={{ marginTop: "var(--spacing-inline)" }}>
-                  <strong>Current CTAR tools fail when not sustained.</strong> Commonly available tools offer
-                  limited engagement, feedback, or adaptability. Research-backed and game-based systems show
-                  short-term promise, but are often costly and evaluated only for immediate outcomes.
-                </li>
-                <li style={{ marginTop: "var(--spacing-inline)" }}>
-                  <strong>Therefore, understanding continued use intention is essential.</strong> Even clinically
-                  effective exercises fail to reduce risk if they aren&apos;t maintained. Designing tools for
-                  real-world adoption requires examining how experiential factors shape engagement and willingness
-                  to sustain use.
-                </li>
-              </ol>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* Problem Statement */}
-      <section>
-        <Container>
-          <h2>Problem statement</h2>
-
-          <div style={{ marginTop: "var(--spacing-block)", display: "flex", flexDirection: "column", gap: "var(--spacing-block)" }}>
-            <div>
-              <h3>Existing efforts and their limits</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>
-                Interactive rehabilitation systems and serious games for swallowing training have been widely
-                explored and demonstrate potential short-term benefits in engagement and adherence. However,
-                sustaining use over time remains a common challenge — suggesting that effectiveness depends
-                not just on game elements or theoretical grounding, but on how users actually experience
-                the interaction.
-              </p>
-            </div>
-
-            <div>
-              <h3>The gap</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>
-                While many systems incorporate features like feedback, goals, or challenge, the specific
-                experiential factors that contribute to continued use intention are often assumed rather
-                than systematically examined. As a result, it&apos;s difficult to know which aspects of
-                the experience are most critical for long-term engagement.
-              </p>
-            </div>
-
-            <div>
-              <h3>Research focus</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>
-                While prior work suggests that gamified CTAR tools can improve short-term engagement, it
-                remains unclear which aspects of the interaction experience actually shape users&apos;
-                intention to continue over time.
-              </p>
-              <p style={{ marginTop: "var(--spacing-element)" }}>
-                This project set out to identify the experiential factors that influence continuous use
-                intention in preventive CTAR training, using flow theory as an analytical lens. Rather
-                than comparing exercise effectiveness, the study focused on how interaction qualities —
-                clarity of goals, feedback, challenge–skill balance, and intrinsic motivation — relate
-                to users&apos; attitudes and willingness to sustain use.
-              </p>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* My Role & Scope */}
-      <section>
-        <Container>
-          <h2>My role & scope</h2>
-
-          <div style={{ marginTop: "var(--spacing-block)", display: "flex", flexDirection: "column", gap: "var(--spacing-block)" }}>
-            <div>
-              <h3>What I did</h3>
-              <p style={{ marginTop: "var(--spacing-inline)", fontSize: "1.125rem" }}>
-                UX Researcher & Interaction Designer — Master&apos;s Thesis Project
-              </p>
-              <ul style={{ marginTop: "var(--spacing-inline)" }}>
-                <li>Led end-to-end research from problem framing and literature review through study design and analysis</li>
-                <li>Conducted interviews with speech therapists (n=4) and one occupational therapist to understand preventive training practices and constraints</li>
-                <li>Designed a flow-informed interactive CTAR training system combining a modified physical device with a real-time serious game</li>
-                <li>Defined interaction goals, feedback logic, and user flow; collaborated with an external game studio for implementation</li>
-                <li>Co-developed a sensor-enabled CTAR prototype with a mechanical engineering professor and student</li>
-                <li>Designed and executed the experimental protocol; analyzed results using structural equation modeling (SEM)</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3>Collaborators</h3>
-              <ul style={{ marginTop: "var(--spacing-inline)" }}>
-                <li><strong>Faculty advisor (human factors / design)</strong> — Guidance on scope, study design, and interpretation</li>
-                <li><strong>Speech therapists (n=4)</strong> — Input on training protocols, preventive use cases, and clinical plausibility</li>
-                <li><strong>Mechanical engineering collaborators</strong> — Sensor integration and device prototyping</li>
-                <li><strong>Game development studio</strong> — Game implementation based on defined interaction flows</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3>Study scope & constraints</h3>
-              <ul style={{ marginTop: "var(--spacing-inline)" }}>
-                <li><strong>Population:</strong> Adults aged 50+, healthy or sub-healthy (preventive focus)</li>
-                <li><strong>Context:</strong> Single-session, lab-based experience</li>
-                <li><strong>Outcomes:</strong> Interaction experience, attitude, and continuous intention of use</li>
-                <li><strong>Constraints:</strong> Intention-based outcomes, not observed long-term behavior; prototype used as research instrument</li>
-              </ul>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* Study Design */}
-      <section>
-        <Container>
-          <h2>Study design</h2>
-
-          <div style={{ marginTop: "var(--spacing-block)", display: "flex", flexDirection: "column", gap: "var(--spacing-block)" }}>
-            <div>
+              <h3 style={{ marginBottom: "var(--spacing-inline)" }}>Context</h3>
               <p>
-                An exploratory, single-session study examining how interaction experience relates to
-                users&apos; intention to continue using a preventive CTAR training system. Rather than
-                evaluating clinical effectiveness, the study focused on how users experienced the
-                interaction and how that shaped their attitudes toward continued use.
+                Preventive training device for dysphagia (swallowing difficulty), designed for adults 50+,
+                targeting the window before symptom onset. The core challenge: what drives someone to keep
+                doing a preventive exercise that doesn't yet feel necessary?
               </p>
             </div>
-
             <div>
-              <h3>Participants</h3>
-              <ul style={{ marginTop: "var(--spacing-inline)" }}>
-                <li>Adults aged 50 and older</li>
-                <li>No history of head or neck surgery or diagnosed swallowing disorders</li>
-                <li>Recruited to reflect a preventive (pre-clinical) context rather than rehabilitation after diagnosis</li>
-              </ul>
+              <h3 style={{ marginBottom: "var(--spacing-inline)" }}>Presented at</h3>
+              <p>IEEE-ICASI 2025 conference; Journal of Design 2024 conference, Taiwan</p>
             </div>
 
-            <div>
-              <h3>Session structure</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>
-                Each session lasted approximately one hour, held across three quiet controlled settings
-                (a university lab, a private office, and a community center).
+            {/* The Finding — yellow callout */}
+            <div style={{
+              background: "var(--band-highlight)",
+              padding: "var(--spacing-block)",
+              borderRadius: "4px",
+              marginTop: "var(--spacing-element)"
+            }}>
+              <p style={{
+                fontSize: "0.75rem",
+                color: "var(--foreground-muted)",
+                marginBottom: "var(--spacing-inline)",
+                letterSpacing: "0.05em"
+              }}>
+                THE FINDING
               </p>
-              <ol style={{ marginTop: "var(--spacing-inline)" }}>
-                <li>Study explanation and informed consent</li>
-                <li>Pre-test questionnaire (demographics, EAT-10 swallowing screening, 1RM calibration)</li>
-                <li>Introduction to the CTAR system — device walkthrough and learning-by-doing onboarding</li>
-                <li>CTAR training tasks: isometric training → rest → isokinetic training</li>
-                <li>Post-test questionnaire</li>
-                <li>Semi-structured interview</li>
-                <li>Compensation</li>
-              </ol>
-              <p style={{ marginTop: "var(--spacing-element)" }}>
-                Real-time sensor data from the CTAR device controlled the game interaction throughout training.
-              </p>
-            </div>
-
-            <div>
-              <h3>Data collected</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>
-                <strong>Quantitative</strong> — Post-use questionnaires measuring six flow-related experiential
-                factors (intrinsic motivation, self-efficacy, unambiguous feedback, ease of use, clear goals,
-                challenge–skill balance), usage attitude, and continuance intention.
-              </p>
-              <p style={{ marginTop: "var(--spacing-element)" }}>
-                <strong>Qualitative</strong> — Semi-structured interviews to unpack Likert responses, understand
-                what felt satisfying or confusing, surface perceived barriers, and gather design feedback.
-              </p>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* Methods */}
-      <section>
-        <Container>
-          <h2>Methods</h2>
-
-          <div style={{ marginTop: "var(--spacing-block)", display: "flex", flexDirection: "column", gap: "var(--spacing-block)" }}>
-            <div>
               <p>
-                Mixed-methods design. Participants used a gamified, sensor-enabled CTAR prototype, completed
-                a theory-driven questionnaire designed for SEM analysis, and participated in semi-structured
-                interviews. The focus was on experiential factors — not clinical outcomes — to understand how
-                interaction design shapes attitudes and willingness to sustain use.
-              </p>
-            </div>
-
-            <div>
-              <h3>Prototype and interaction setup</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>
-                The CTAR prototype translated physical training effort into real-time game interaction
-                (biofeedback), enabling clear goals, immediate feedback, and adaptive challenge during both
-                isometric and isokinetic exercises. This allowed participants to experience CTAR as an
-                interactive system rather than a standalone exercise.
-              </p>
-            </div>
-
-            <div>
-              <h3>Measurement model</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>
-                The quantitative instrument was built around a hypothesized SEM model grounded in flow theory,
-                prior literature, and therapist input: <strong>9 latent variables</strong>, <strong>27 Likert-scale items</strong> (3 per construct), all specified a priori.
-              </p>
-              <p style={{ marginTop: "var(--spacing-element)" }}>
-                Six antecedents were structured using the Person–Artifact–Task (PAT) framework:
-              </p>
-              <ul style={{ marginTop: "var(--spacing-inline)" }}>
-                <li><strong>Person:</strong> Intrinsic motivation, self-efficacy</li>
-                <li><strong>Artifact:</strong> Unambiguous feedback, ease of use</li>
-                <li><strong>Task:</strong> Clear goals, challenge–skill balance</li>
-              </ul>
-              <p style={{ marginTop: "var(--spacing-element)" }}>
-                These six factors were hypothesized to predict flow experience, which predicted usage attitude,
-                which predicted continuance intention — a before–during–after experience structure.
-              </p>
-            </div>
-
-            <div>
-              <h3>Analysis</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>
-                Quantitative data was analyzed using SEM in SmartPLS, enabling simultaneous examination of
-                relationships across the full model. Qualitative interview data was thematically synthesized
-                to contextualize the SEM results and surface design-relevant insights.
-              </p>
-            </div>
-
-            <div>
-              <h3>Recruitment</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>
-                Participants were recruited through direct outreach to community centers in Taipei, where
-                older adults regularly attend classes and group activities — supporting access to a preventive,
-                pre-clinical population aligned with the study&apos;s goals.
+                My model showed intrinsic motivation, not self-efficacy, as the strongest predictor of
+                long-term use. I'd expected self-efficacy — confidence in using the device — to matter most;
+                instead it came out weak and negative. Interviews explained why: for this population, sticking
+                with the system wasn't about confidence in the device, it was about already seeing themselves
+                as someone who takes preventive health action. That gap between the model and the interviews
+                became the basis for the design guidelines proposed later in this case study.
               </p>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* Key Insights */}
+      {/* ── THE CHALLENGE ── yellow band */}
+      <section style={{ background: "var(--band-highlight)" }}>
+        <Container>
+          <div style={{ paddingTop: "var(--spacing-section)", paddingBottom: "var(--spacing-section)" }}>
+            <h2>The Challenge</h2>
+            <div style={{
+              marginTop: "var(--spacing-block)",
+              display: "flex",
+              flexDirection: "column",
+              gap: "var(--spacing-element)"
+            }}>
+              <p>
+                Dysphagia affects nutrition, health, and independence in older adults. By the time symptoms
+                appear, significant muscle decline has often already occurred. Preventive training exists.
+                The problem is that it rarely sustains consistent engagement over time.
+              </p>
+              <p>
+                That raised the <strong>research question</strong> I kept coming back to: what actually
+                drives an older adult to keep doing a preventive exercise that doesn't yet feel necessary?
+              </p>
+              <p>
+                I didn't want to answer that question from the outside. So I used the system itself as a
+                research instrument: building a gamified, biofeedback-enabled CTAR device to create the
+                conditions where I could study engagement, motivation, and long-term use intent in a
+                realistic context.
+              </p>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ── MY CONTRIBUTIONS ── */}
       <section>
         <Container>
-          <h2>Key insights</h2>
-
-          <div style={{ marginTop: "var(--spacing-block)", display: "flex", flexDirection: "column", gap: "var(--spacing-block)" }}>
-            <div>
-              <h3>1. Intrinsic motivation was the real driver — not interface factors</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>
-                The SEM revealed a clear, theoretically coherent adoption pathway:
-              </p>
-              <ul style={{ marginTop: "var(--spacing-inline)" }}>
-                <li>Intrinsic motivation → Flow experience (β = 0.788)</li>
-                <li>Flow experience → Usage attitude (β = 0.751)</li>
-                <li>Usage attitude → Continuance intention (β = 0.872)</li>
-              </ul>
-              <p style={{ marginTop: "var(--spacing-element)" }}>
-                What surprised me was what <em>didn&apos;t</em> predict flow. Self-efficacy, ease of use,
-                clear goals, unambiguous feedback, and challenge–skill balance all showed weak or unstable
-                effects. In a preventive health context, whether someone already cared about proactive health
-                mattered more than how polished the interaction felt.
-              </p>
-            </div>
-
-            <div>
-              <h3>2. Enjoyment was necessary — but not sufficient</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>
-                Participants described the biofeedback interaction as engaging and satisfying. But a
-                recurring pattern emerged:
-              </p>
-              <p style={{ marginTop: "var(--spacing-element)", paddingLeft: "1.5rem", borderLeft: "2px solid var(--border)" }}>
-                &ldquo;I can see myself using it, but only if a doctor tells me to.&rdquo;
-              </p>
-              <p style={{ marginTop: "var(--spacing-element)" }}>
-                Enjoyment did not override perceived medical necessity. The system wasn&apos;t competing on
-                usability — it was competing with a person&apos;s readiness to act preventively at all.
-              </p>
-            </div>
-
-            <div>
-              <h3>3. Health identity shaped adoption more than game quality</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>
-                Participants who already maintained proactive health habits showed noticeably stronger interest:
-              </p>
-              <p style={{ marginTop: "var(--spacing-element)", paddingLeft: "1.5rem", borderLeft: "2px solid var(--border)" }}>
-                &ldquo;I&apos;ve been massaging my chin muscles before eating. Where can I get this?&rdquo;
-              </p>
-              <p style={{ marginTop: "var(--spacing-element)" }}>
-                Continuance intention was shaped by whether someone already identified as a person who takes
-                preventive action. In this population, intrinsic motivation was less about &ldquo;liking the
-                game&rdquo; and more about health identity.
-              </p>
-            </div>
-
-            <div>
-              <h3>4. Trust pathways mattered more than gamification</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>
-                Participants consistently said they would adopt the system if recommended by a doctor or
-                therapist. This wasn&apos;t skepticism toward the device — it reflected how this population
-                makes health decisions. Professional endorsement functioned as permission to act. The adoption
-                pathway likely runs through clinical relationships, not direct consumer appeal.
-              </p>
-            </div>
-
-            <div>
-              <h3>5. Setup complexity competed with the primary goal</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>
-                Gamification assumes engagement is the goal. For these participants, the goal was effortless
-                training that fits daily routines. Even participants who enjoyed the experience flagged setup
-                as a barrier:
-              </p>
-              <p style={{ marginTop: "var(--spacing-element)", paddingLeft: "1.5rem", borderLeft: "2px solid var(--border)" }}>
-                &ldquo;I might need my kids to help me with this.&rdquo;
-              </p>
-              <p style={{ marginTop: "var(--spacing-element)" }}>
-                Some preferred a simpler mechanical device they could use while watching TV. The system
-                optimized for engagement. Users optimized for minimal disruption.
-              </p>
-            </div>
+          <h2>My Contributions</h2>
+          <p style={{ marginTop: "var(--spacing-inline)", color: "var(--foreground-muted)" }}>
+            I led the research and design end to end, across five phases:
+          </p>
+          <div style={{
+            marginTop: "var(--spacing-block)",
+            display: "flex",
+            flexDirection: "column",
+            gap: "var(--spacing-element)"
+          }}>
+            {[
+              {
+                phase: "Framing & Research Design",
+                detail: "Defined the research question and theoretical framework (Flow Theory + the Person-Artifact-Task model). Conducted a literature review and speech therapist interviews to ground the design in clinical reality."
+              },
+              {
+                phase: "Measurement & Instrument Design",
+                detail: "Built a theory-driven measurement model and developed a 27-item, 5-point Likert questionnaire to test it."
+              },
+              {
+                phase: "System & Interaction Design",
+                detail: "Defined the training parameters and game design criteria: feedback logic, challenge progression, session structure. Set the performance thresholds the sensor needed to detect."
+              },
+              {
+                phase: "Data Collection",
+                detail: "Recruited 30 participants independently through community centers. Administered the questionnaire post-use and conducted qualitative interviews to contextualize the findings."
+              },
+              {
+                phase: "Analysis & Synthesis",
+                detail: "Ran PLS-SEM analysis in SmartPLS and synthesized quantitative and qualitative findings into design recommendations."
+              }
+            ].map(({ phase, detail }) => (
+              <div key={phase} style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 2fr",
+                gap: "var(--spacing-block)",
+                paddingBottom: "var(--spacing-element)",
+                borderBottom: "1px solid var(--border)"
+              }}>
+                <p style={{ fontWeight: 600 }}>{phase}</p>
+                <p style={{ color: "var(--foreground-muted)" }}>{detail}</p>
+              </div>
+            ))}
           </div>
         </Container>
       </section>
 
-      {/* Limitations & Reflection */}
+      {/* ── TEAM ── */}
       <section>
         <Container>
-          <h2>Limitations & reflection</h2>
-
-          <div style={{ marginTop: "var(--spacing-block)", display: "flex", flexDirection: "column", gap: "var(--spacing-block)" }}>
-            <div>
-              <h3>Study limitations</h3>
-              <p style={{ marginTop: "var(--spacing-inline)" }}>
-                This was a single-session exploratory study with n=30, using a 27-item SEM model. While the
-                core pathway was strong, a larger sample would provide greater statistical stability. Outcomes
-                were intention-based rather than observed long-term behavior.
-              </p>
-            </div>
-
-            <div>
-              <h3>What I&apos;d do differently</h3>
-              <ul style={{ marginTop: "var(--spacing-inline)" }}>
-                <li>Conduct exploratory interviews with the target user group earlier, and let those insights shape the model and prototype before formal testing</li>
-                <li>Treat prototype feedback and formal testing as distinct phases, allowing therapist and user input to drive iteration before confirmatory data collection begins</li>
-                <li>Run longitudinal testing to examine actual adherence rather than post-use intention</li>
-                <li>Include individuals experiencing early-stage swallowing difficulty alongside healthy preventive users</li>
-              </ul>
-              <p style={{ marginTop: "var(--spacing-element)" }}>
-                The most significant lesson was upstream: a theoretically grounded model can still reflect the
-                designer&apos;s assumptions if discovery and iteration are compressed by time constraints.
-              </p>
+          <h2>Team</h2>
+          <div style={{ marginTop: "var(--spacing-block)", display: "flex", flexDirection: "column", gap: "var(--spacing-element)" }}>
+            <p>
+              I collaborated with a game design studio, which built the game to my specifications,
+              information architecture, and logic flow across two rounds of iteration. I also worked
+              with a mechanical engineering professor and two student engineers, who defined sensor
+              specs and built the physical prototype to my system requirements. Together, we integrated
+              the game with the sensor-equipped device into one working system and iterated on data
+              calibration.
+            </p>
+            {/* Team photo placeholder */}
+            <div style={{
+              width: "100%",
+              aspectRatio: "16 / 7",
+              background: "var(--border)",
+              borderRadius: "4px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: "var(--foreground-muted)",
+              fontSize: "0.875rem",
+              marginTop: "var(--spacing-element)"
+            }}>
+              [System diagram: device to Arduino to game data flow, with my role vs. team contributions]
             </div>
           </div>
         </Container>
       </section>
 
-      {/* Impact */}
+      {/* ── WHAT I BUILT ── */}
+      <section>
+        <Container>
+          <h2>What I Built</h2>
+          <p style={{ marginTop: "var(--spacing-inline)", color: "var(--foreground-muted)" }}>
+            The system has two integrated components.
+          </p>
+          <div style={{
+            marginTop: "var(--spacing-block)",
+            display: "flex",
+            flexDirection: "column",
+            gap: "var(--spacing-block)"
+          }}>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "var(--spacing-block)" }}>
+              {/* Physical device */}
+              <div style={{ display: "flex", flexDirection: "column", gap: "var(--spacing-element)" }}>
+                <div style={{
+                  width: "100%",
+                  aspectRatio: "4 / 3",
+                  background: "var(--border)",
+                  borderRadius: "4px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: "var(--foreground-muted)",
+                  fontSize: "0.875rem"
+                }}>
+                  [Photo: physical device]
+                </div>
+                <div>
+                  <p style={{ fontWeight: 600, marginBottom: "var(--spacing-inline)" }}>Physical device</p>
+                  <p style={{ color: "var(--foreground-muted)" }}>
+                    A modified Neckline Slimmer, a chin-resistance product originally designed for cosmetic
+                    use, which speech therapists later adopted as a CTAR training instrument for its
+                    feasibility and low cost. I worked with the engineering team to embed a custom sensor
+                    that captures chin tuck depth and resistance in real time, routing it through an Arduino
+                    to the game interface. I defined the performance thresholds through literature review and
+                    therapist interviews; the engineering team translated those into sensor specs, and together
+                    we calibrated the raw distance readings into four discrete ranges to make the data usable
+                    by the game logic.
+                  </p>
+                </div>
+              </div>
+              {/* Game interface */}
+              <div style={{ display: "flex", flexDirection: "column", gap: "var(--spacing-element)" }}>
+                <div style={{
+                  width: "100%",
+                  aspectRatio: "4 / 3",
+                  background: "var(--border)",
+                  borderRadius: "4px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: "var(--foreground-muted)",
+                  fontSize: "0.875rem"
+                }}>
+                  [Screenshot: game interface]
+                </div>
+                <div>
+                  <p style={{ fontWeight: 600, marginBottom: "var(--spacing-inline)" }}>Game interface</p>
+                  <p style={{ color: "var(--foreground-muted)" }}>
+                    A desktop game where the training movement directly controls the character and the game
+                    provides immediate biofeedback. I defined the feedback logic, challenge progression, and
+                    session structure (grounded in Flow Theory and therapist interviews); the game studio
+                    built it to spec. The training exercise and the gameplay are the same action.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ── MY APPROACH ── */}
+      <section>
+        <Container>
+          <h2>My Approach</h2>
+          <div style={{
+            marginTop: "var(--spacing-block)",
+            display: "flex",
+            flexDirection: "column",
+            gap: "var(--spacing-element)"
+          }}>
+            <p>
+              I took a research-driven approach: ground the design in theory first, then test whether
+              that rationale held with real users.
+            </p>
+            <p>
+              I chose <strong>Flow Theory</strong> because it offers a structural way to understand
+              sustained engagement: challenge-skill balance, clear feedback, a sense of control. For
+              preventive training, where the core challenge is sustaining motivation in the absence of
+              symptoms, this felt like the right lens.
+            </p>
+            <p>
+              I paired it with the <strong>Person-Artifact-Task (PAT) model</strong>, a framework built
+              specifically for digital interactive environments that accounts for how user characteristics,
+              device properties, and task demands interact. That made it more precise than a general
+              technology acceptance model for a system like this.
+            </p>
+            <p>
+              Gamification and serious games also have an established evidence base in rehabilitation,
+              which gave me a grounded rationale for the approach rather than treating it as an untested
+              assumption.
+            </p>
+
+            <div style={{ marginTop: "var(--spacing-element)" }}>
+              <p style={{ fontWeight: 600, marginBottom: "var(--spacing-element)" }}>Key research activities</p>
+              <ul style={{ display: "flex", flexDirection: "column", gap: "var(--spacing-inline)" }}>
+                <li>
+                  Built a theory-driven measurement model proposing how motivation, self-efficacy, feedback
+                  quality, and challenge-skill balance shape attitude toward and{" "}
+                  <strong>continuance intention</strong> (the likelihood someone keeps using the system
+                  long-term).
+                </li>
+                <li>
+                  Developed and administered a 27-item questionnaire post-use to 30 participants. This
+                  captures self-reported perception and attitude, not observed behavior.
+                </li>
+                <li>
+                  Conducted qualitative interviews alongside the questionnaire to surface patterns the
+                  model alone couldn't capture.
+                </li>
+                <li>
+                  Applied <strong>PLS-SEM</strong> (structural equation modeling, via SmartPLS) rather
+                  than covariance-based SEM. PLS-SEM is built for smaller sample sizes like this study's
+                  n=30, while still letting me test how multiple latent variables jointly shape an outcome,
+                  rather than examining predictors in isolation.
+                </li>
+                <li>
+                  Recruited 30 participants independently through neighborhood community centers. Inclusion
+                  criteria: age 50+, no diagnosed swallowing difficulty (screened via the{" "}
+                  <strong>EAT-10</strong>, a standard 10-item clinical tool for swallowing-difficulty risk;
+                  score of 3+ excluded), no history of head or neck injury or surgery.
+                </li>
+              </ul>
+            </div>
+
+            {/* Diagram placeholder */}
+            <div style={{
+              width: "100%",
+              aspectRatio: "16 / 6",
+              background: "var(--border)",
+              borderRadius: "4px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: "var(--foreground-muted)",
+              fontSize: "0.875rem",
+              marginTop: "var(--spacing-element)"
+            }}>
+              [Diagram: measurement model and research process]
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ── KEY INSIGHTS ── yellow band */}
+      <section style={{ background: "var(--band-highlight)" }}>
+        <Container>
+          <div style={{ paddingTop: "var(--spacing-section)", paddingBottom: "var(--spacing-section)" }}>
+            <h2>Key Insights</h2>
+            <p style={{ marginTop: "var(--spacing-inline)", color: "var(--foreground-muted)" }}>
+              Going in, I expected gamification and engagement quality to be the primary drivers of
+              adoption. The data confirmed experiential factors mattered, but what surfaced was a more
+              complicated picture about whose model of motivation was actually embedded in the design.
+            </p>
+            <div style={{
+              marginTop: "var(--spacing-block)",
+              display: "flex",
+              flexDirection: "column",
+              gap: "var(--spacing-block)"
+            }}>
+              {[
+                {
+                  n: "1",
+                  heading: "Enjoyment was necessary but not sufficient for adoption.",
+                  body: "Participants found the biofeedback and gamification genuinely engaging, but engagement alone didn't translate to adoption intent. A recurring pattern: "I can see myself using it, but I'll only use it when I really need it." The system was competing not just on usability, but on a person's readiness to act preventively at all."
+                },
+                {
+                  n: "2",
+                  heading: "Intrinsic motivation and health identity were the real entry points.",
+                  body: "Participants who already maintained proactive health habits showed meaningfully higher interest: "I've been massaging my chin muscles before eating nowadays. Where can I get this system?" Adoption intent was shaped less by in-the-moment motivation and more by whether someone already saw themselves as a person who takes preventive action."
+                },
+                {
+                  n: "3",
+                  heading: "Medical professionals are the trust gatekeepers.",
+                  body: "Users consistently said they'd adopt the system if a doctor or therapist recommended it. This wasn't skepticism toward the device — it was how this population makes health decisions. The adoption pathway needs to run through clinical relationships, not just consumer appeal."
+                },
+                {
+                  n: "4",
+                  heading: "Setup complexity competed with the actual goal.",
+                  body: "I had assumed engagement was the goal. For most participants, the goal was effortless training that fit an existing routine. Even participants who enjoyed the experience flagged setup as a barrier: "I might need a tech person or my kids to help me." One suggested a simpler mechanical device used while watching TV; another said content matched to personal interests, like classical music, would feel more sustainable. Setup became its own cognitive task, competing with the training goal instead of supporting it."
+                },
+                {
+                  n: "5",
+                  heading: "The design encoded my values, not the user's.",
+                  body: "The system was informed by speech therapist interviews, but validated with healthy adults 50+, not people currently experiencing swallowing difficulty. The clinician perspective shaped what I built; user testing revealed what it was actually like to use. The motivational logic in the design reflected my assumptions more than users' realities."
+                }
+              ].map(({ n, heading, body }) => (
+                <div key={n} style={{
+                  display: "grid",
+                  gridTemplateColumns: "2rem 1fr",
+                  gap: "var(--spacing-element)",
+                  paddingBottom: "var(--spacing-block)",
+                  borderBottom: "1px solid rgba(0,0,0,0.1)"
+                }}>
+                  <p style={{ fontWeight: 600, fontSize: "1.125rem" }}>{n}.</p>
+                  <div>
+                    <p style={{ fontWeight: 600, marginBottom: "var(--spacing-inline)" }}>{heading}</p>
+                    <p>{body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Journey map placeholder */}
+            <div style={{
+              width: "100%",
+              aspectRatio: "16 / 6",
+              background: "rgba(0,0,0,0.08)",
+              borderRadius: "4px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: "var(--foreground-muted)",
+              fontSize: "0.875rem",
+              marginTop: "var(--spacing-block)"
+            }}>
+              [User journey map: motivational entry points, trust pathway, service barriers]
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ── REFLECTIONS & NEXT STEPS ── */}
+      <section>
+        <Container>
+          <h2>Reflections & Next Steps</h2>
+          <div style={{
+            marginTop: "var(--spacing-block)",
+            display: "flex",
+            flexDirection: "column",
+            gap: "var(--spacing-element)"
+          }}>
+            <p>
+              The gap between design intent and user reality wasn't a failure — it was diagnostic. It
+              clarified the actual design problem: not building a better training device, but designing
+              for the full adoption journey and lifestyle fit.
+            </p>
+            <p style={{ fontWeight: 600 }}>If I continued this work, I would:</p>
+            <ul style={{ display: "flex", flexDirection: "column", gap: "var(--spacing-inline)" }}>
+              <li>
+                Run <strong>longitudinal testing</strong> over weeks or months, and triangulate the
+                questionnaire's attitudinal data against behavioral data — the gameplay and biofeedback
+                logs the system already captures — rather than relying on self-reported intent alone.
+                Intent and long-term adherence are different things, and behavioral data would close
+                that gap.
+              </li>
+              <li>
+                Include people currently experiencing early-stage swallowing difficulty alongside healthy
+                preventive users, to close the gap between the consulted population (clinicians) and the
+                tested population (healthy adults) that limited this study.
+              </li>
+              <li>
+                Bring medical professionals into the design process earlier, treating referral and trust
+                as design requirements — not external factors — and building the clinical handoff into
+                the system architecture from the start.
+              </li>
+              <li>
+                Explore a business model shift: distribute through hospitals and therapy clinics on a
+                rental basis instead of direct-to-consumer, with structured onboarding and peer or
+                caregiver support built into that channel rather than left to the user. This would lower
+                cost and setup burden, route the system through the medical-authority trust this
+                population said they needed, and shift onboarding and tech support onto clinical staff
+                already equipped to provide it.
+              </li>
+            </ul>
+          </div>
+        </Container>
+      </section>
+
+      {/* ── IMPACT ── */}
       <section>
         <Container>
           <h2>Impact</h2>
+          <ul style={{
+            marginTop: "var(--spacing-block)",
+            display: "flex",
+            flexDirection: "column",
+            gap: "var(--spacing-inline)"
+          }}>
+            <li>Presented at IEEE-ICASI 2025 and at the Journal of Design 2024 conference, Taiwan</li>
+            <li>Received an "Excellent" rating in a government-funded research project</li>
+            <li>
+              Found that device confidence mattered less for adoption than existing health identity —
+              an explanation the SEM data alone couldn't have provided
+            </li>
+          </ul>
+        </Container>
+      </section>
 
-          <div style={{ marginTop: "var(--spacing-block)", display: "flex", flexDirection: "column", gap: "var(--spacing-block)" }}>
-            <div>
-              <ul style={{ marginTop: "var(--spacing-inline)" }}>
-                <li>Contributed to a lab research publication presented at IEEE-ICASI 2025</li>
-                <li>Received &ldquo;Excellent&rdquo; rating in a government-funded research project</li>
-              </ul>
-              <p style={{ marginTop: "var(--spacing-element)" }}>
-                More importantly, the findings reframed the direction of the work — from optimizing interface
-                engagement to examining adoption readiness, trust, and lifestyle integration.
-              </p>
-            </div>
+      {/* ── WHY THIS MATTERS ── */}
+      <section>
+        <Container>
+          <h2>Why This Matters</h2>
+          <div style={{
+            marginTop: "var(--spacing-block)",
+            display: "flex",
+            flexDirection: "column",
+            gap: "var(--spacing-element)"
+          }}>
+            <p>
+              This project is where I learned what it actually means to mix methods. The SEM told me
+              which variables mattered, and which didn't: intrinsic motivation was the strongest
+              predictor of long-term use, while self-efficacy — which I expected to be a strong driver
+              — came out weak and negative. On its own, that's just a number. The interviews told me
+              why: for this population, self-efficacy wasn't about confidence in the device. It was
+              about whether someone already saw themselves as a person who takes preventive action at
+              all. That gap between what the model predicted and what the interviews explained is what
+              shaped the design guidelines I propose in Reflections & Next Steps, away from interface
+              polish and toward the trust infrastructure and service context surrounding the device.
+            </p>
+            <p>
+              A well-researched, theoretically grounded design can still encode the researcher's
+              assumptions rather than the user's reality. Rigor isn't a guarantee of fit. Getting to
+              fit means staying genuinely curious about the gap between the model and the person, and
+              treating that gap as the most important data.
+            </p>
           </div>
         </Container>
       </section>
 
-      {/* Navigation */}
+      {/* ── NAV ── */}
       <section>
         <Container>
-          <nav
-            style={{
-              marginTop: "var(--spacing-block)",
-              paddingTop: "var(--spacing-block)",
-              borderTop: "1px solid var(--border)",
-              display: "flex",
-              justifyContent: "space-between",
-              gap: "var(--spacing-block)",
-              flexWrap: "wrap",
-            }}
-          >
+          <nav style={{
+            marginTop: "var(--spacing-block)",
+            paddingTop: "var(--spacing-block)",
+            borderTop: "1px solid var(--border)",
+            display: "flex",
+            justifyContent: "space-between",
+            gap: "var(--spacing-block)",
+            flexWrap: "wrap"
+          }}>
             <Link href="/work">← Back to work</Link>
           </nav>
         </Container>
       </section>
+
     </article>
   );
 }
